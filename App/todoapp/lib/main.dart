@@ -21,8 +21,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
-
-
   final String title;
 
   @override
@@ -55,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 40,bottom: 30),
+                  padding: EdgeInsets.only(bottom: 40),
                   height:130,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
@@ -65,10 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: const Color.fromARGB(0XFF,0X33, 0X66, 0X8B),
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text("In-tray", style: TitleStyle,),
-                      Container()
                     ],
                   )
                 ),
@@ -80,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Container(
                     child: Icon(Icons.add, size:50, ),
                     ),
-                    backgroundColor: const Color.fromARGB(0XFF,0X7A, 0XDA, 0XCC),
+                    backgroundColor: lightslateBlue,
                     onPressed: () {},
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   ),
@@ -101,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       icon: new Icon(Icons.settings)
                       ,)
                   ],
-                  labelColor: Colors.yellow,
+                  labelColor: Colors.white,
                   unselectedLabelColor: Colors.white30,
                   indicatorSize: TabBarIndicatorSize.label,
                   indicatorPadding: EdgeInsets.all(5.0),
