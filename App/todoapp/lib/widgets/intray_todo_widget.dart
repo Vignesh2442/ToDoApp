@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:todoapp/models/global.dart';
 
 class IntrayToDo extends StatelessWidget{
+  final String title;
+  final String keyValue;
+  IntrayToDo({this.keyValue, this.title});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom:15,left:15, right: 15),
+      key: Key(keyValue),
+      margin: EdgeInsets.only(bottom:5), // outside of container
+      padding: EdgeInsets.all(15), // inside of container
       height:70,
       decoration: BoxDecoration(
       color: lightGreyColor,
@@ -21,6 +27,19 @@ class IntrayToDo extends StatelessWidget{
         )
       ]
       ),
+      child: Row(
+        children: <Widget> [
+          Radio(
+
+
+          ),
+          Column(
+            children: <Widget>[
+              Text (title, style: darkToDoTitle,)
+            ],
+          )
+        ]
+      )
     );
   }
 
