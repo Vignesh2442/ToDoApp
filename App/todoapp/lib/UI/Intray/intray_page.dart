@@ -17,7 +17,7 @@ class _IntrayPageState extends State<IntrayPage> {
       color: greyBackground,
       child: Container(
         margin: EdgeInsets.only(left:15, right: 15), // outside of container
-        padding: EdgeInsets.only(top:160.0,bottom:0.0,left:0.0,right:0.0),
+        padding: EdgeInsets.only(top:150.0,bottom:0.0,left:0.0,right:0.0),
         color: greyBackground,
         child: _buildReorderableListSimple(context)
 //        children: todoItems,
