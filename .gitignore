@@ -1,0 +1,5 @@
+Backend/env/__pycache__
+Backend/env/Lib
+Backend/env/Scripts
+Backend/env/pyvenv.cfg
+Backend/.vscode
